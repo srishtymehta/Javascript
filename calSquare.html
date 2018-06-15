@@ -14,20 +14,22 @@
             color: forestgreen;
             border-radius: 10px;
         }
-    </style>
-    <script>
-        var x = 10;
 
-        function calSquare() {
-            console.log("Value of x is : " + x);
-            document.body.innerHTML += "<p>The square of " + x + " = " + x * x + "</p>";
-        }
-    </script>
+    </style>
+
 </head>
 
 <body>
 
-    <button class="hi" onclick="calSquare();">PUSH! Here for the x Variable's Square...</button>
+    <button class="hi" onclick="calSquare()">PUSH! Here for the x Variable's Square...</button>
+    <script>
+        var x = 10;
+
+        function calSquare() {
+            console.log("Value of x is : " + x + "\n The square of " + x + " = " + x * x);
+        }
+
+    </script>
 
 </body>
 
