@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Type Baas</title>
+    <!--bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        #Progress_Status {
+            width: 50%;
+            background-color: #ddd;
+            margin: 40px 0px 0px 155px;
+
+        }
+
+        #myprogressBar {
+            width: 2%;
+            height: 20px;
+            background-color: #4CAF50;
+
+        }
+
+        .container {
+            background-color: antiquewhite;
+            margin: 50px 30px 0px 30px;
+            border-radius: 50px;
+        }
+
+        .title {
+            padding: 30px;
+            font-family: cursive;
+            text-align: center;
+        }
+
+        .score {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .display {
+            font-family: 'cinzel', serif;
+            text-align: center;
+            padding: 25px;
+            background-color: bisque;
+            border-radius: 60px;
+            font-size: 40px;
+
+        }
+
+        .in {
+            font-size: 25px;
+            font-family: cursive;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <div class="title">
+                <h1>TypE... BaaS</h1>
+            </div>
+
+            <div class="score">
+                <h3>Score :<span id="points"> 0</span></h3>
+            </div>
+        </section>
+        <div class="buttons">
+            <button id="begin" class="btn btn-info">Beginner</button>
+            <button id="inter" class="btn btn-info" onclick="inte()">Intermediate</button>
+            <button id="expert" class="btn btn-info" onclick="exp()">Expert</button>
+        </div>
+        <section>
+            <div class="display">Ready..?</div>
+            <div class="in">Type Here --> <input id="text" type="text"></div>
+            <div class="buttons"> <button id="start" class="btn btn-primary" type="button" onclick="update()">Start</button>
+                <button id="restart" class="btn btn-primary">Restart</button>
+                <button id="End" class="btn btn-primary" onclick="end()">End</button></div>
+        </section>
+    </div>
+    <div id="Progress_Status">
+        <div id="myprogressBar"></div>
+    </div>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="Third.js"></script>
+</body>
+
+
+
+</html>
